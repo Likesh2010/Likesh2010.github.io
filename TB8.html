@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      background-color: black;
+      padding: 10px;
+      text-align: right;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .book-image img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border: 1px solid #999;
+      border-radius: 5px;
+    }
+
+    .book-details {
+      flex: 2 1 300px;
+    }
+
+    .book-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .book-description {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    .download-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .download-button:hover {
+      background-color: #45a049;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .book-image img {
+        max-width: 100%;
+      }
+
+      .book-title {
+        font-size: 24px;
+      }
+
+      .book-description {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar {
+        text-align: center;
+      }
+
+      .navbar a {
+        display: block;
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      .container {
+        margin: 20px 10px;
+        padding: 15px;
+      }
+
+      .book-title {
+        font-size: 22px;
+      }
+
+      .book-description {
+        font-size: 14px;
+      }
+
+      .download-button {
+        padding: 10px;
+        font-size: 15px;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="Home.html">Home</a>
+    <a href="Books.html">Books</a>
+    <a href="About.html">About</a>
+    <a href="Sign-in.html">Sign-in</a>
+    <a href="Log-in.html">Log-in</a>
+  </div>
+  <div class="container">
+    <div class="book-image">
+      <img src="Photos/TB8.jpg" alt="Book Cover">
+    </div>
+    <div class="book-details">
+      <div class="book-title">శివాజీ మహారాజు జీవిత గాధ</div>
+      <div class="book-description">
+        Author : Anjaneya Sarma
+      </div>
+      <a href="Log-in.html" class="download-button" download>Download Book</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Books</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 1rem;
+    }
+    .log {
+      background-color: white;
+      color: black;
+      width: 100%;
+      max-width: 450px;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin: 0.75rem 0 0.25rem;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .button {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 1.2rem;
+      background-color: blue;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: darkblue;
+    }
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    p {
+      margin-top: 1.2rem;
+      font-size: 16px;
+      text-align: center;
+    }
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 480px) {
+      .log {
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      .button {
+        font-size: 16px;
+        padding: 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="log">
+    <form id="loginForm">
+      <h1>Login</h1>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <div id="emailError" class="error"></div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <div id="passwordError" class="error"></div>
+      <button type="submit" class="button">Login</button>
+    </form>
+    <p>Don't have an account? <a href="Sign-in.html">Create one</a></p>
+  </div>
+  <script>
+    const form = document.getElementById('loginForm');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const emailError = document.getElementById('emailError');
+    const passwordError = document.getElementById('passwordError');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Stop form submission
+      let isValid = true;
+      emailError.textContent = '';
+      passwordError.textContent = '';
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!emailPattern.test(email.value.trim())) {
+        emailError.textContent = 'Please enter a valid email address.';
+        isValid = false;
+      }
+      if (password.value.trim().length < 6) {
+        passwordError.textContent = 'Password must be at least 6 characters long.';
+        isValid = false;
+      }
+      if (isValid) {
+        window.location.href = 'Index.html';
+      }
+    });
+  </script>
+</body>
+</html>

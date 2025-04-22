@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tamil-Books</title>
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+    ul {
+      list-style: none;
+      background: black;
+      padding: 10px 0;
+      margin: 0;
+      text-align: right;
+    }
+    ul li {
+      display: inline;
+      padding: 15px;
+    }
+    ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 10px 15px;
+      transition: background 0.3s ease-in-out;
+    }
+    ul li a:hover {
+      background: #575757;
+      border-radius: 5px;
+    }
+    .section {
+      width: 100%;
+      padding: 30px;
+      background-color: #f4f4f4;
+      box-sizing: border-box;
+    }
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .book-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .book-container {
+      flex: 1 1 calc(25% - 20px);
+      display: flex;
+      align-items: center;
+      min-width: 250px;
+      box-sizing: border-box;
+    }
+    .book-content {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .book img {
+      width: 120px;
+      height: 180px;
+      object-fit: cover;
+      border: 1px solid #aaa;
+      transition: transform 0.2s ease;
+    }
+    .book img:hover {
+      transform: scale(1.05);
+    }
+    .description {
+      font-size: 18px;
+      color: #333;
+      max-width: 150px;
+    }
+    @media (max-width: 800px) {
+      .book-container {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+    @media (max-width: 500px) {
+      .book-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .book img {
+        width: 100px;
+        height: 150px;
+      }
+      .description {
+        max-width: 120px;
+      }
+      .book-container {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="">Books</a></li>	
+    <li><a href="#about">About</a></li>
+    <li><a href="Log-in.html">Log-in</a></li>
+    <li><a href="Sign-in.html">Sign-in</a></li>
+  </ul>
+  <div class="section">
+    <div class="title">Tamil - Sci-Fi</div>
+    <div class="book-row">
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB1.html" class="book">
+            <img src="Photos/TB1.jpg" alt="Book 1 Cover" />
+          </a>
+          <div class="description">என் இனிய இயந்திரா</div>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB2.html" class="book">
+            <img src="Photos/TB2.jpg" alt="Book 2 Cover" />
+          </a>
+          <div class="description">மீரா</div>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB3.html" class="book">
+            <img src="Photos/TB3.jpg" alt="Book 3 Cover" />
+          </a>
+          <div class="description">அத்திபலன்</div>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB4.html" class="book">
+            <img src="Photos/TB4.jpg" alt="Book 4 Cover" />
+          </a>
+          <div class="description">சாயா வந்த தேசம்</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="title">Tamil - History</div>
+    <div class="book-row">
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB5.html" class="book">
+            <img src="Photos/TB5.jpg" alt="Book 5 Cover" />
+          </a>
+          <div class="description">பார்த்திபன் கனவு</div>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB6.html" class="book">
+            <img src="Photos/TB6.jpg" alt="Book 6 Cover" />
+          </a>
+          <div class="description">உடையார்</div>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB7.html" class="book">
+            <img src="Photos/TB7.jpg" alt="Book 7 Cover" />
+          </a>
+          <div class="description">பொன்னியின் செல்வன்</div>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB8.html" class="book">
+            <img src="Photos/TB8.jpg" alt="Book 8 Cover" />
+          </a>
+          <div class="description">கடல் புறா</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="title">Tamil - Novels</div>
+    <div class="book-row">
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB9.html" class="book">
+            <img src="Photos/TB9.jpg" alt="Book 9 Cover" />
+          </a>
+          <div class="description">சில நேரங்களில் சில மனிதர்கள் </div>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB10.html" class="book">
+            <img src="Photos/TB10.jpg" alt="Book 10 Cover" />
+          </a>
+          <div class="description">அகநானூறு</div>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB11.html" class="book">
+            <img src="Photos/TB11.jpg" alt="Book 11 Cover" />
+          </a>
+          <div class="description">பருவ நிலா</div>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB13.html" class="book">
+            <img src="Photos/TB12.jpg" alt="Book 12 Cover" />
+          </a>
+          <div class="description">மூன்றாம் உலகப் போர்</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="title">Tamil - Poetry</div>
+    <div class="book-row">
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB13.html" class="book">
+            <img src="Photos/TB13.jpg" alt="Book 13 Cover" />
+          </a>
+          <div class="description">திருக்குறள்</div>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB14.html" class="book">
+            <img src="Photos/TB14.jpg" alt="Book 14 Cover" />
+          </a>
+          <div class="description">புராண நூல்கள் </div>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB15.html" class="book">
+            <img src="Photos/TB15.jpg" alt="Book 15 Cover" />
+          </a>
+          <div class="description">மணிமேகலை</div>
+        </div>
+      </div>
+      <div class="book-container">
+        <div class="book-content">
+          <a href="EB16.html" class="book">
+            <img src="Photos/TB16.jpg" alt="Book 16 Cover" />
+          </a>
+          <div class="description">பாரதியார் கவிதைகள்</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
